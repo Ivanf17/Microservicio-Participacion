@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Consultar Postulaciones</title>
+</head>
+<body>
+
+    <h2>Consultar Postulaciones por Voluntario</h2>
+
+    <form action="ParticipacionControl" method="GET">
+        <input type="hidden" name="accion" value="listarPostulaciones">
+
+        <label>ID del Voluntario:</label>
+        <input type="number" name="idVoluntario" required>
+
+        <button type="submit">Consultar</button>
+    </form>
+
+</body>
+</html>
+

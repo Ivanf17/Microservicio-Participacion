@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generar Certificado</title>
+</head>
+<body>
+<h2>Generar Certificado</h2>
+
+<form action="ParticipacionControl" method="post">
+    <input type="hidden" name="accion" value="generarCertificado">
+
+    <label>ID Voluntario:</label>
+    <input type="number" name="idVoluntario" required><br><br>
+
+    <label>ID Proyecto:</label>
+    <input type="number" name="idProyecto" required><br><br>
+
+    <button type="submit">Generar</button>
+</form>
+
+<br>
+<a href="index.html">Volver al menú</a>
+
+</body>
+</html>
+

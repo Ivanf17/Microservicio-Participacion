@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Postulación</title>
+</head>
+<body>
+
+    <h2>Registrar Postulación</h2>
+
+    <form action="ParticipacionControl" method="POST">
+        <input type="hidden" name="accion" value="postular">
+
+        <label>ID Voluntario:</label>
+        <input type="number" name="idVoluntario" required><br><br>
+
+        <label>ID Proyecto:</label>
+        <input type="number" name="idProyecto" required><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
+
+

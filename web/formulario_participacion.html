@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Participación</title>
+</head>
+<body>
+
+<h2>Registrar Participación</h2>
+
+<form action="ParticipacionControl" method="post">
+    <input type="hidden" name="accion" value="registrarParticipacion">
+
+    <label>ID Voluntario:</label>
+    <input type="number" name="idVoluntario" required><br><br>
+
+    <label>ID Proyecto:</label>
+    <input type="number" name="idProyecto" required><br><br>
+
+    <label>Horas:</label>
+    <input type="number" name="horas" required><br><br>
+
+    <label>Fecha Inicio:</label>
+    <input type="date" name="fechaInicio" required><br><br>
+
+    <label>Fecha Fin:</label>
+    <input type="date" name="fechaFin" required><br><br>
+
+    <button type="submit">Registrar</button>
+</form>
+
+<br>
+<a href="index.html">Volver al menú</a>
+
+</body>
+</html>
+
