@@ -2,17 +2,163 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MS - Participación</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+        }
+        
+        .navbar {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .welcome {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .welcome h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .welcome p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .action-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .action-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .action-card .icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .action-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .action-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
-    <h1>Microservicio de Participación</h1>
-    <ul>
-        <li><a href="formulario_postulacion.html">Registrar Postulación</a></li>
-        <li><a href="formulario_participacion.html">Registrar Participación</a></li>
-        <li><a href="formulario_certificado.html">Generar Certificado</a></li>
-        <li><a href="listar_postulaciones.html">Listar Postulaciones</a></li>
-        <li><a href="listar_certificados.html">Listar Certificados</a></li>
-    </ul>
+    <div class="navbar">
+        <div class="navbar-brand">🌟 Sistema de Participación</div>
+    </div>
+
+    <div class="container">
+        <div class="welcome">
+            <h1>Microservicio de Participación</h1>
+            <p>Gestiona postulaciones, participaciones y certificados de voluntarios</p>
+        </div>
+
+        <div class="actions">
+            <a href="formulario_postulacion.html" class="action-card">
+                <div class="icon">📝</div>
+                <h3>Registrar Postulación</h3>
+                <p>Registra una nueva postulación de voluntario a un proyecto</p>
+                <span class="btn">Ir al formulario</span>
+            </a>
+
+            <a href="formulario_participacion.html" class="action-card">
+                <div class="icon">✅</div>
+                <h3>Registrar Participación</h3>
+                <p>Registra las horas y fechas de participación en un proyecto</p>
+                <span class="btn">Ir al formulario</span>
+            </a>
+
+            <a href="formulario_certificado.html" class="action-card">
+                <div class="icon">🏆</div>
+                <h3>Generar Certificado</h3>
+                <p>Genera un certificado de participación para un voluntario</p>
+                <span class="btn">Ir al formulario</span>
+            </a>
+
+            <a href="listar_postulaciones.html" class="action-card">
+                <div class="icon">📋</div>
+                <h3>Listar Postulaciones</h3>
+                <p>Consulta todas las postulaciones de un voluntario</p>
+                <span class="btn">Consultar</span>
+            </a>
+
+            <a href="listar_certificados.html" class="action-card">
+                <div class="icon">📜</div>
+                <h3>Listar Certificados</h3>
+                <p>Consulta los certificados emitidos a un voluntario</p>
+                <span class="btn">Consultar</span>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
 
