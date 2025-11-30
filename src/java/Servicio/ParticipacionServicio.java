@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ParticipacionServicio {
 
-    IParticipacionDAO dao = new ParticipacionPostgresDAO();
+    IParticipacionDAO dao = new ParticipacionMongoDAO();
 
     public boolean postular(PostulacionDTO dto) {
         return dao.crearPostulacion(dto);
